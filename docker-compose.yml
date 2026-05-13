@@ -4,5 +4,6 @@ services:
     volumes:
       - ./code/:/var/www/html
       - ./tests/:/var/www/html/tests
+      - ./composer.json:/var/www/html/composer.json
     env_file:
       - .env.test
